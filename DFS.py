@@ -3,13 +3,41 @@ class TreeNode:
         self.v = value
         self.left = None
         self.right = None
-def pre_order(t):
+def pre_order(t, l):
     if t:
-        print(t.v)
+        #print or add to a list
+        l.append(t.v)
         #add visited if its connected graph
-        pre_order(t.left)
-        pre_order(t.right)
-    
+        pre_order(t.left, l)
+        pre_order(t.right, l)
+
+def pre_order_iterative(t, l):
+    stk = []
+    stk.append(t)
+    while stk:
+        curr = stk.pop()
+        # can be replaced with a print as needed
+        l.append(curr.v)
+        #note that you append right first because you pop out the end
+        if curr.right:
+            stk.append(curr.right)
+        if curr.left:
+            stk.append(curr.left)
+
+def inorder(t):
+    if t:
+        inorder(t.left)
+        print(t.v)
+        inorder(t.right)
+#TODO: inorder iterative
+
+def postorder(t):
+    if t:
+        postorder(t.left)
+        postorder(t.right)
+        print(t.v)
+#TODO: post order iterative
+
 if __name__ == "__main__":
     p = TreeNode(1)
     p.left = TreeNode(2)
@@ -21,6 +49,13 @@ if __name__ == "__main__":
         2       4
            6        5
     """
-    pre_order(p)
+    r = []
+    pre_order(p,r)
+    print(r)
+    r= []
+    pre_order_iterative(p,r)
+    print(r)
+    inorder(p)
+    postorder(p)
 
 
