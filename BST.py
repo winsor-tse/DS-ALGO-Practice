@@ -15,6 +15,9 @@ def validate_BST(bst) -> bool:
     The right subtree of a node contains only nodes with keys greater than the node's key.
     Both the left and right subtrees must also be binary search trees.
     """
+    #pre order dfs check left and right using intervals
+    import collections
+    
     return False
 
 if __name__ == '__main__':

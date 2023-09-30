@@ -1,0 +1,9 @@
+total 26
+drwxr-xr-x 1 winds 197609    0 Sep 30 02:08 .
+drwxr-xr-x 1 winds 197609    0 Sep 30 01:40 ..
+-rw-r--r-- 1 winds 197609 2222 Sep 30 01:56 Bash_Interview.txt
+-rwxr-xr-x 1 winds 197609  673 Sep 30 02:04 Conditionals_Bash.sh
+-rwxr-xr-x 1 winds 197609  368 Sep 30 02:08 Grep_Bash.sh
+-rwxr-xr-x 1 winds 197609  241 Sep 30 02:01 ls_command_Bash.sh
+-rw-r--r-- 1 winds 197609  315 Sep 30 01:39 Parameter_Bash.sh
+-rwxr-xr-x 1 winds 197609  156 Sep 30 01:42 Practice.sh
