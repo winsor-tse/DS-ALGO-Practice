@@ -6,3 +6,4 @@ if echo $file; then
 else
     echo "File is not here"
 fi
+
