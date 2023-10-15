@@ -6,7 +6,7 @@ class BST:
         self.right = None
 
 
-def validate_BST(bst) -> bool:
+def validate_BST(bst, ) -> bool:
     """
     A valid BST is defined as follows:
     The left 
@@ -17,7 +17,11 @@ def validate_BST(bst) -> bool:
     """
     #pre order dfs check left and right using intervals
     import collections
-    
+    if bst:
+        if bst.left:
+            validate_BST
+        if bst,right:
+            
     return False
 
 if __name__ == '__main__':
