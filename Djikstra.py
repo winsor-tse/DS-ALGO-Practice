@@ -16,6 +16,7 @@ def djikstra(adj, start_node):
     import heapq
     #create pq with value of 0 and start node
     #assume that start node may or may not exist
+    #value and startnode or vertix
     p_q = [(0,start_node)]
     #weight and vertix
     shortest_path = {}
@@ -25,8 +26,9 @@ def djikstra(adj, start_node):
             shortest_path[v] = w
             #start the dfs here
             for v_i, w_i in adj[v]:
-                #add the weights
+                #add the weights and vertix
                 heapq.heappush(p_q, (w + w_i, v_i))
+                print(p_q)
     return shortest_path
 if __name__ == '__main__':
     print('hello')
