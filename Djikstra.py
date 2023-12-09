@@ -11,7 +11,7 @@ class graph:
         for u,v,w in self.edges:
             a[u].append([v,w])
         return a
-
+#djikstra to find the shortest path starting with node to all other 
 def djikstra(adj, start_node):
     import heapq
     #create pq with value of 0 and start node
